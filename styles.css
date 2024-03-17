@@ -1,14 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 600px;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
     text-align: center;
     border: 1px solid #f74780;
     box-shadow: 2px 0px 1px 1px #fe125d;
@@ -16,16 +17,23 @@ body {
     border-radius: 5px;
 }
 
-.container h1, p {
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container h1, .container p {
     color: #f74780;
 }
 
-.container input {
+.container input[type="text"] {
     margin-top: 20px;
-    width: 80%;
+    width: 100%;
     padding: 8px;
     border: 1px solid #f74780;
     border-radius: 2px;
+    box-sizing: border-box;
 }
 
 .container button {
@@ -33,8 +41,10 @@ body {
     background-color: #f74780;
     border: none;
     color: #fff;
-    font-size: 600;
+    font-size: 16px;
     cursor: pointer;
+    margin-top: 20px;
+    border-radius: 2px;
 }
 
 .container button:hover {
@@ -59,12 +69,12 @@ body {
 }
 
 .task input[type="checkbox"] {
-    padding: 50px;
+    padding: 0;
+    margin-right: 10px;
 }
 
 .delete-btn {
     cursor: pointer;
-    margin-right: 20px;
     background-color: #f85e8f;
     padding: 5px 10px;
     border-radius: 2px;
@@ -73,4 +83,10 @@ body {
 
 .delete-btn:hover {
     background-color: #f85e8f;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
 }
