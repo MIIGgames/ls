@@ -12,7 +12,7 @@ body {
     margin: 0 auto;
     text-align: center;
     border: 1px solid #f74780;
-    box-shadow: 2px 0px 1px 1px #fe125d;
+    box-shadow: 1px 0.5px 1px 1px #fe125d;
     padding: 20px;
     border-radius: 5px;
 }
